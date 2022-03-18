@@ -1,0 +1,19 @@
+{
+  "name": "pokemon",
+  "version": "0.0.0",
+  "description": "Projeto da BlueEdTech - Semana 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvpbarbosa/Pokedex.git"
+  },
+  "author": "Marcos Barbosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mvpbarbosa/Pokedex/issues"
+  },
+  "homepage": "https://github.com/mvpbarbosa/Pokedex#readme"
+}
