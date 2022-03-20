@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/detalhes.css">
+    <title> Detalhes </title>
+</head>
+<body>
+
+    <nav>
+        <img src="https://pokedex.sleduardo.dev/img/logo.svg" alt="Pokedex imagem">
+    </nav>
+
+    <main>
+        <% pokemonAtual.forEach(element => { %>
+            <div id="card-container">  
+    
+                <div class="header-card">
+                    <span class="card-id"> <%= element.id %> </span>
+                    <span class="card-number"> <%= element.num %> </span>
+                </div>
+    
+    
+                <div id="main-card"> 
+                    <img src="<%= element.img %> " alt="<%= element.name %> ">
+                   <div class="card-name"> <%= element.name%> </div>
+                   <div id="data-card"> 
+                    <span class="width"> <%= element.weight%> </span>
+                    <span class="heigth"> <%= element.height%> </span>
+                   </div>
+                </div>
+
+                <div>
+                    <%= element.candy %> 
+                </div>
+
+                <div>
+                    Weaknesses: <%= element.weaknesses %>
+                </div>
+    
+    
+                <div id="footer-card"> <%= element.type%> </div>
+        
+            </div>
+        </a>
+        <%})%>
+    </main>
+    
+    
+</body>
+</html>
